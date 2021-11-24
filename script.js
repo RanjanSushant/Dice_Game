@@ -12,6 +12,8 @@ const player2Dice = document.querySelector("#player2dice");
 const rollBtn = document.querySelector("#rollbutton");
 const resetBtn = document.querySelector("#resetbtn");
 
+const celebrate = document.querySelector("#celebrate")
+
 player1Turn = true;
 // player2turn = !player1Turn;
 
@@ -43,8 +45,10 @@ rollBtn.addEventListener("click", function() {
         rollBtn.style.display = "none"
         resetBtn.style.display = "block"
         if(score2 > score1) {
+            celebrate.textContent = "🎊🎊"
             message.textContent = "Player 2 wins"
         } else if(score1 > score2) {
+            celebrate.textContent = "🎊🎊"
             message.textContent = "Player 1 wins"
         } else {
             message.textContent = "It's a Draw"
@@ -57,6 +61,7 @@ rollBtn.addEventListener("click", function() {
 
 resetBtn.addEventListener("click", function() {
     // console.log("reset now")
+    celebrate.textContent = ""
     message.textContent = "Player 1 turn"
     player1Score.textContent = 0
     player2Score.textContent = 0

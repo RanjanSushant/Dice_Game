@@ -8,6 +8,10 @@ body {
     background: aqua;
 }
 
+#celebrate {
+    font-size: large;
+}
+
 #message {
     margin-bottom: 20px;
 }
