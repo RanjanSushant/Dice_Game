@@ -8,10 +8,12 @@ const player2Score = document.querySelector("#player2score");
 const player1Dice = document.querySelector("#player1dice");
 const player2Dice = document.querySelector("#player2dice");
 
+const startBtn = document.querySelector("#start-game")
 const rollBtn = document.querySelector("#rollbutton");
 const resetBtn = document.querySelector("#resetbtn");
 
-const celebrate = document.querySelector("#celebrate")
+const celebrate = document.querySelector("#celebrate");
+const rulesModal = document.querySelector("#rules");
 
 //local variables
 let score1 = 0;
@@ -76,4 +78,8 @@ resetBtn.addEventListener("click", function() {
     player2Dice.classList.remove("active")
     resetBtn.style.display = "none"
     rollBtn.style.display = "block"
+})
+
+startBtn.addEventListener("click", function() {
+    rulesModal.style.display = "none"
 })
