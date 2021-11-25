@@ -2,9 +2,8 @@ const message = document.querySelector("#message");
 
 const player1Score = document.querySelector("#player1score");
 const player2Score = document.querySelector("#player2score");
-let score1 = 0;
-let score2 = 0;
-let thisRoll = 0;
+
+
 
 const player1Dice = document.querySelector("#player1dice");
 const player2Dice = document.querySelector("#player2dice");
@@ -14,8 +13,11 @@ const resetBtn = document.querySelector("#resetbtn");
 
 const celebrate = document.querySelector("#celebrate")
 
+//local variables
+let score1 = 0;
+let score2 = 0;
+let thisRoll = 0;
 player1Turn = true;
-// player2turn = !player1Turn;
 
 player1Dice.classList.add("active")
 
