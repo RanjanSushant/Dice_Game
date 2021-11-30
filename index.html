@@ -4,38 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Looks Dicey</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./support-files/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./support-files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./support-files/favicon-16x16.png">
+    <link rel="manifest" href="./support-files/site.webmanifest">
     <link rel="stylesheet" href="styles.css">
+    <title>Looks Dicey</title>    
 </head>
 <body>
-    <div class="container">
-        <div id="celebrate" style="font-size: 60px"></div>
-        <h1 id="message">Player 1 turn</h1>
-        <div class="players">
-            <div class="player1">
-                <h1>Score:<span id="player1score">0</span></h1>
-                <div id="player1dice" class="dice">-</div>
-            </div>
+    <div class="flex-container">
+        <div class="container">
+            <div id="celebrate" style="font-size: 60px"></div>
+            <h1 id="message">Player 1 turn</h1>
+            <div class="players">
+                <div class="player1">
+                    <h1>Score:<span id="player1score">0</span></h1>
+                    <div id="player1dice" class="dice">-</div>
+                </div>
 
-            <div class="player2">
-                <h1>Score:<span id=player2score>0</span></h1>
-                <div id="player2dice" class="dice">-</div>
+                <div class="player2">
+                    <h1>Score:<span id=player2score>0</span></h1>
+                    <div id="player2dice" class="dice">-</div>
+                </div>
             </div>
-        </div>
-        <button id="rollbutton">Roll Dice</button>
-        <button id="resetbtn">Reset Game</button>
+            <button id="rollbutton">Roll Dice</button>
+            <button id="resetbtn">Reset Game</button>
 
-        <div class="rules" id="rules">
-            <h1>Rules of the Game:</h1>
-            <ul>
-                <li>Each player takes turns rolling the dice</li>
-                <li>Click <em>Roll Dice</em> button to roll your dice</li>
-                <li>The game ends when atleast one player reaches 20 or greater</li>
-                <li>The player with higher score wins the game</li>
-                <li>Click the <em>Reset Game</em> button to start again</li>
-                <li>Click the <em>Start Game</em> button below to begin</li>
-            </ul>
-            <button id="start-game">Start Game</button>
+            <div class="flex-container">
+                <div class="rules" id="rules">
+                    <h1>Rules of the Game:</h1>
+                    <ul>
+                        <li>Each player takes turns rolling the dice</li>
+                        <li>Click <em>Roll Dice</em> button to roll your dice</li>
+                        <li>The game ends when atleast one player reaches 20 or greater</li>
+                        <li>The player with higher score wins the game</li>
+                        <li>Click the <em>Reset Game</em> button to start again</li>
+                        <li>Click the <em>Start Game</em> button below to begin</li>
+                    </ul>
+                    <button id="start-game">Start Game</button>
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
