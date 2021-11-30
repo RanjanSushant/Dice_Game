@@ -51,9 +51,11 @@ rollBtn.addEventListener("click", function() {
         if(score2 > score1) {
             celebrate.textContent = "🎊🎊"
             message.textContent = "Player 2 wins"
+            confettiStart();
         } else if(score1 > score2) {
             celebrate.textContent = "🎊🎊"
             message.textContent = "Player 1 wins"
+            confettiStart(); 
         } else {
             message.textContent = "It's a Draw"
         }
@@ -65,6 +67,7 @@ rollBtn.addEventListener("click", function() {
 
 resetBtn.addEventListener("click", function() {
     // console.log("reset now")
+    confettiStop();
     celebrate.textContent = ""
     message.textContent = "Player 1 turn"
     player1Score.textContent = 0
@@ -83,3 +86,16 @@ resetBtn.addEventListener("click", function() {
 startBtn.addEventListener("click", function() {
     rulesModal.style.display = "none"
 })
+
+const confettiStart = () => {
+    setTimeout(function() {
+        confetti.start();
+    }, 1000)
+}
+
+const confettiStop = () => {
+    setTimeout(function() {
+        confetti.stop();
+    }, 100)
+}
+
