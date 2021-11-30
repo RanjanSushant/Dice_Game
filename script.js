@@ -96,6 +96,6 @@ const confettiStart = () => {
 const confettiStop = () => {
     setTimeout(function() {
         confetti.stop();
-    }, 100)
+    }, 1)
 }
 
